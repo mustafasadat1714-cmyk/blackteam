@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>BLACK TEAM | 20+ Tools & Utilities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="custom-cursor"></div>
+<div class="custom-cursor-follower"></div>
+
+<div id="loadingScreen" class="loading-screen">
+    <div class="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <span>BLACK TEAM</span>
+    </div>
+</div>
+
+<div id="toastContainer" class="toast-container"></div>
+
+<!-- AI Chat Assistant -->
+<div id="aiChat" class="ai-chat">
+    <div class="ai-chat-header" id="aiChatToggle">
+        <i class="fas fa-robot"></i>
+        <span>BLACK AI Assistant</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="ai-chat-body" id="aiChatBody">
+        <div class="ai-messages" id="aiMessages">
+            <div class="ai-message ai">
+                <i class="fas fa-robot"></i>
+                <span>Hello! I'm BLACK AI Assistant. Ask me anything about our 20+ tools!</span>
+            </div>
+        </div>
+        <div class="ai-input-area">
+            <input type="text" id="aiInput" placeholder="Ask me anything..." class="ai-input">
+            <button id="aiSendBtn" class="ai-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/logo.gif" alt="BT">
+            <span>BLACK TEAM</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">HOME</a></li>
+            <li><a href="#owner" class="nav-link">LEADERS</a></li>
+            <li><a href="#projects" class="nav-link">TOOLS</a></li>
+            <li><a href="#staff" class="nav-link">STAFF</a></li>
+            <li><a href="#admins" class="nav-link">ADMINS</a></li>
+            <li><a href="#join" class="nav-link">JOIN</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="https://discord.gg/FS3pthJh6a" target="_blank" class="discord-nav-btn"><i class="fab fa-discord"></i></a>
+            <button id="aiOpenBtn" class="ai-open-btn"><i class="fas fa-robot"></i></button>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="gif-container">
+            <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/logo.gif" alt="BLACK TEAM" class="hero-gif">
+        </div>
+        <h1 class="glitch" data-text="BLACK TEAM">BLACK TEAM</h1>
+        <p class="hero-subtitle">⚡ 20+ Free Developer Tools ⚡</p>
+        <div class="hero-buttons">
+            <button class="hero-btn primary" id="heroJoinBtn"><i class="fab fa-discord"></i> JOIN DISCORD</button>
+            <button class="hero-btn secondary" id="heroWelcomeBtn"><i class="fas fa-hand-peace"></i> WELCOME</button>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>SCROLL DOWN</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- Projects Section - 20+ Tools -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-project-diagram"></i> TOOLS & UTILITIES<div class="title-line"></div></h2>
+        
+        <div class="tools-grid" id="toolsGrid">
+            <div class="tool-card" data-tool="discordspawner"><i class="fab fa-discord"></i><h3>Discord Spawner</h3><p>10-Channel Spawn</p><button>Open</button></div>
+            <div class="tool-card" data-tool="webhookspawner"><i class="fas fa-link"></i><h3>Webhook Spawner</h3><p>Webhook Mass</p><button>Open</button></div>
+            <div class="tool-card" data-tool="discordcloner"><i class="fas fa-copy"></i><h3>Discord Cloner</h3><p>Clone Servers</p><button>Open</button></div>
+            <div class="tool-card" data-tool="dumper"><i class="fas fa-globe"></i><h3>Website Dumper</h3><p>Download Sites</p><button>Open</button></div>
+            <div class="tool-card" data-tool="converter"><i class="fas fa-exchange-alt"></i><h3>Media Converter</h3><p>MP4↔MP3</p><button>Open</button></div>
+            <div class="tool-card" data-tool="passwordgen"><i class="fas fa-lock"></i><h3>Password Gen</h3><p>Strong Passwords</p><button>Open</button></div>
+            <div class="tool-card" data-tool="binary"><i class="fas fa-code"></i><h3>Text to Binary</h3><p>Convert Text</p><button>Open</button></div>
+            <div class="tool-card" data-tool="base64"><i class="fas fa-shield-alt"></i><h3>Base64 Tool</h3><p>Encode/Decode</p><button>Open</button></div>
+            <div class="tool-card" data-tool="urlencoder"><i class="fas fa-link"></i><h3>URL Encoder</h3><p>Encode/Decode</p><button>Open</button></div>
+            <div class="tool-card" data-tool="md5"><i class="fas fa-fingerprint"></i><h3>MD5 Generator</h3><p>Hash Text</p><button>Open</button></div>
+            <div class="tool-card" data-tool="json"><i class="fas fa-brackets-curly"></i><h3>JSON Formatter</h3><p>Format JSON</p><button>Open</button></div>
+            <div class="tool-card" data-tool="lorem"><i class="fas fa-paragraph"></i><h3>Lorem Ipsum</h3><p>Placeholder Text</p><button>Open</button></div>
+            <div class="tool-card" data-tool="qrcode"><i class="fas fa-qrcode"></i><h3>QR Code Gen</h3><p>Generate QR</p><button>Open</button></div>
+            <div class="tool-card" data-tool="colorpicker"><i class="fas fa-eye-dropper"></i><h3>Color Picker</h3><p>Pick Colors</p><button>Open</button></div>
+            <div class="tool-card" data-tool="wordcounter"><i class="fas fa-file-alt"></i><h3>Word Counter</h3><p>Count Words</p><button>Open</button></div>
+            <div class="tool-card" data-tool="randomuser"><i class="fas fa-user-plus"></i><h3>Random User</h3><p>Generate User</p><button>Open</button></div>
+            <div class="tool-card" data-tool="uuid"><i class="fas fa-id-card"></i><h3>UUID Generator</h3><p>Generate UUID</p><button>Open</button></div>
+            <div class="tool-card" data-tool="ipinfo"><i class="fas fa-map-marker-alt"></i><h3>IP Lookup</h3><p>Get IP Info</p><button>Open</button></div>
+            <div class="tool-card" data-tool="cases"><i class="fas fa-font"></i><h3>Text Case</h3><p>Change Case</p><button>Open</button></div>
+            <div class="tool-card" data-tool="timestamp"><i class="fas fa-clock"></i><h3>Timestamp</h3><p>Convert Time</p><button>Open</button></div>
+            <div class="tool-card" data-tool="hash"><i class="fas fa-hashtag"></i><h3>SHA256 Hash</h3><p>Generate SHA256</p><button>Open</button></div>
+            <div class="tool-card" data-tool="regex"><i class="fas fa-search"></i><h3>Regex Tester</h3><p>Test Regex</p><button>Open</button></div>
+            <div class="tool-card" data-tool="htmlencode"><i class="fab fa-html5"></i><h3>HTML Encode</h3><p>Encode HTML</p><button>Open</button></div>
+            <div class="tool-card" data-tool="slug"><i class="fas fa-link"></i><h3>Slugify</h3><p>Create URL Slug</p><button>Open</button></div>
+            <div class="tool-card" data-tool="creditcard"><i class="fas fa-credit-card"></i><h3>CC Generator</h3><p>Test Cards</p><button>Open</button></div>
+        </div>
+    </div>
+</section>
+
+<!-- Modals Container -->
+<div id="modalContainer" class="modal-container"></div>
+
+<!-- Owner Section -->
+<section id="owner" class="owner-section">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-crown"></i> LEADERSHIP<div class="title-line"></div></h2>
+        <div class="owner-container">
+            <div class="owner-card-enhanced">
+                <div class="owner-badge"><i class="fas fa-star"></i> FOUNDER & OWNER</div>
+                <div class="owner-avatar"><img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/mebers.gif" alt="Black_Sahil" class="owner-gif-avatar"><div class="owner-status"><i class="fas fa-circle"></i> Online</div></div>
+                <h3>Black_Sahil</h3>
+                <p class="owner-title">Founder & Lead Developer</p>
+                <div class="owner-bio"><p>"Leading BLACK TEAM to glory. 20+ tools and counting!"</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Staff Section -->
+<section id="staff" class="staff-section">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-shield-alt"></i> ELITE STAFF<div class="title-line"></div></h2>
+        <div class="staff-grid" id="staffGrid"></div>
+    </div>
+</section>
+
+<!-- Admins Section -->
+<section id="admins" class="admins-section">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-user-shield"></i> ADMINISTRATION<div class="title-line"></div></h2>
+        <div class="admins-grid" id="adminsGrid"></div>
+    </div>
+</section>
+
+<!-- Join Section -->
+<section id="join" class="join-section">
+    <div class="container">
+        <div class="join-card">
+            <div class="join-icon"><i class="fab fa-discord"></i></div>
+            <h2>READY TO JOIN BLACK TEAM?</h2>
+            <p>Join BLACK TEAM today and become part of something legendary</p>
+            <div class="join-features">
+                <div class="feature"><i class="fas fa-gamepad"></i><span>FiveM</span></div>
+                <div class="feature"><i class="fab fa-discord"></i><span>Discord</span></div>
+                <div class="feature"><i class="fas fa-gift"></i><span>Giveaways</span></div>
+                <div class="feature"><i class="fas fa-shield-alt"></i><span>Safe</span></div>
+            </div>
+            <div class="join-buttons">
+                <a href="https://discord.gg/FS3pthJh6a" target="_blank" class="join-btn discord-btn"><i class="fab fa-discord"></i> JOIN DISCORD</a>
+                <button id="joinWelcomeBtn" class="join-btn welcome-btn"><i class="fas fa-hand-peace"></i> WELCOME</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo"><img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/logo.gif" alt="BT"><span>BLACK TEAM</span></div>
+        <div class="footer-links"><a href="#home">Home</a><a href="#owner">Leader</a><a href="#projects">Tools</a><a href="#staff">Staff</a><a href="#join">Join</a></div>
+        <div class="footer-social"><a href="https://discord.gg/FS3pthJh6a"><i class="fab fa-discord"></i></a><a href="#"><i class="fab fa-github"></i></a></div>
+        <p>© 2025 BLACK TEAM | 20+ Free Tools</p>
+    </div>
+</footer>
+
+<button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
